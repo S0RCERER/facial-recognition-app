@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+        .col-lg-8 {
+            width: 100%;
+        }
+        h1, h3 {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h3>Facial Recognition App</h3>
+                <img src="{{ url_for('video_feed') }}" alt="Live Video Stream">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
